@@ -17,6 +17,7 @@ export const environment = {
   imagesPath: '/assets/images',
 
   // Default language
+
   language: 'en',
   languageId: 9,
 };
