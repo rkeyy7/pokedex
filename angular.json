@@ -30,7 +30,6 @@
               "src/favicon.ico",
               "src/og-image.jpg",
               "src/assets",
-              "src/404.html",
               "src/web.config"
             ],
             "styles": ["src/styles.scss"],
@@ -47,6 +46,11 @@
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": { "minify": true, "inlineCritical": false },
+                "fonts": true
+              },
               "budgets": [
                 {
                   "type": "initial",
